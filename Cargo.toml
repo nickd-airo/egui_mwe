@@ -1,0 +1,12 @@
+[package]
+name = "egui_mwe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.32.0", features = ["wgpu"] }
+wgpu = { version = "25.0.2", features = ["counters"] }
+
+[patch.crates-io]
+egui = { git = "https://github.com/emilk/egui", branch = "main" }
+eframe = { git = "https://github.com/emilk/egui", branch = "main" }
